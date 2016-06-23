@@ -18,7 +18,7 @@ $ sudo docker build -t="paintedfox/tinyproxy" .
 Within the container, Tinyproxy will start listening on port `8888`.  So, if we wish to expose the HTTP proxy service on port `8765` on the host machine, we can run the image like so...
 
 ```
-$ sudo docker run -name="tinyproxy" -p 8765:8888 -d paintedfox/tinyproxy
+$ sudo docker run --name="tinyproxy" -p 8765:8888 -d paintedfox/tinyproxy
 ```
 
-The `-name="tinyproxy"` names the container as *tinyproxy* so we can easily refer to its name rather than id.
+The `--name="tinyproxy"` names the container as *tinyproxy* so we can easily refer to its name rather than id.
